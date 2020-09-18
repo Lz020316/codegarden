@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <title>Title</title>
+    <link rel="stylesheet" href="../common/reset.css">
+    <link rel="stylesheet" href="../common/public.css">
+    <link rel="stylesheet" href="../common/bootstrap.css">
+    <link rel="stylesheet" href="../common/header.css">
+    <link rel="stylesheet" href="../common/footer.css">
+    <link rel="stylesheet" href="../css/about_us.css">
+    <link rel="stylesheet" type="text/css" href="http://api.map.baidu.com/res/12/bmap.css"/>
+    <script type="text/javascript" src="http://api.map.baidu.com/getscript?v=1.2&ak=P74sr1f47THrvlfTmEWZjh42HBH1411r&services=&t=20130716024057"></script>
+    <!--视窗   宽度 = 屏幕可见宽度     缩放倍数=1（不缩放） 允许最大倍数      禁止用户缩放-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <!--让IE用最新版本渲染-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script rel="stylesheet" href="../common/js/html5.js"></script>
+    <script rel="stylesheet" href="../common/js/respond.js"></script>
+    <style type="text/css">
+        .map{
+            margin-top: .5rem !important;
+        }
+        #allmap{
+            width:80%;height:5rem;
+        }
+        #r-result {
+            height: 5rem;
+            width: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap:wrap ;
+        }
+        #r-result input{
+            width:80%;
+            line-height: 2;
+            outline: none;
+            border: 0;
+            background:#b4d3ef;
+            border-radius:.20rem;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-f3f3f3">
+<!--头部开始-->
+<header id="header"></header>
+<!--头部结束-->
+
+<!--主体部分-->
+<main class="content mb25">
+    <section class="center">
+        <div class="padding bg-fff">
+            <h1 class="title fs22 mb10 pt20">关于我们</h1>
+            <figure>
+                <img src="../images/about.jpg" alt="">
+                <figcaption>
+                    <h3 class="text-666 fs16 text-indent line-30 bolder mb10">悟空智慧教育简介</h3>
+                    <p class="text-666 text-indent fs16 line-30">悟空智慧教育致力于培养面向互联网领域的高端人才，以学员就业为目的，优质就业为宗旨，是一家集大数据爬虫、大数据工程师、人工智能开发工程师、UI设计师等课程为一体的IT培训机构。</p>
+                    <p class="text-666 text-indent fs16 line-30">悟空智慧教育为学员量身打造的个性化、差异化就业流程，力保每一位学员不仅能就业，更能优就业。悟空智慧教育会根据学员意愿建档统计就职意向,通过理论+实战+实训的学习，通过毕业考核后，将会接受专业的一对一就业服务指导。</p>
+                    <p class="text-666 text-indent fs16 line-30">悟空智慧教育业务类型主要包括面授培训、网络远程教学培训、网络直播课程培训等。悟空智慧教育为广大学员提供更加人性化的选课服务，包括就业封闭集训营、周末基础班/提升班、实战实训班次，以及全栈高端班次、在线直播课、录播网课等系列产品。更联合高校开设学历班，学成后将获得国家承认的大专、本科学历，满足广大学员对更多技能、更高学历的追求。</p>
+                    <h3 class="text-666 fs16 line-30 text-indent bolder mb10">悟空智慧教育简介</h3>
+                    <h3 class="text-666 text-indent fs16 line-30 bolder mb10">悟空智慧教育·教学理念</h3>
+                    <p class="text-666 text-indent line-30 fs16"><span>面授：</span>悟空智慧教育在各地市开设有不同形式、不同层次的辅导课程，满足学生的差异化、个性化需求。悟空智慧教育不断提高教学水准，以研发为核心竞争力，为学生提供科学有效的教学服务。拥有行业雄厚师资，打造实力悟空智慧教育专家团队，以保证教学效果为导向，设置特色化辅导内容和教学方式。</p>
+                    <p class="text-666 text-indent line-30 fs16"><span>实战：</span>悟空智慧教育与多家企业实体达成亲密合作关系，创造“实训教学”模式，学员在实训课程中，可以直接进入合作企业研发团队，亲自参与项目的运作，真正做到学以致用、学有所成，避免了培训带来的理论与实践脱节的弊端。目前悟空智慧教育为百度、新浪、搜狐、联想、阿里巴巴、中软、华为、摩托罗拉、IBM等多家知名企业培养输送IT人才。</p>
+                    <h3 class="text-666 text-indent line-30 fs16 mb10 bolder">悟空智慧教育·培养目标</h3>
+                    <p class="text-666 text-indent line-30 fs16 mb10">悟空智慧教育作为IT职业教育培训机构，始终坚持“学员的事是最重要的事”这一办学理念，不断升级软件、硬件实力，对教学质量负责，对培训效果负责，真正地对学员负责。</p>
+                    <h3 class="text-666 text-indent line-30 fs16 mb10 bolder">教育特点</h3>
+                    <p class="text-666 text-indent line-30 fs16 mb10">课程体系完善：从软件入门到分类教程、从国内优质课程到海外先进理念，从理论知识到职场实战，打造了一体化的学习、内容服务体系</p>
+                    <p class="text-666 text-indent line-30 fs16 mb10">内容专业实用：大部分教程都是讲师结合实际场景进行案例分析，以便用户更好地结合实际工作进行设计，讲师也会在课程中分享自己的设计心得，提高学员的实战理解能力；</p>
+                    <p class="text-666 text-indent line-30 fs16 mb10">服务机制人性化：社群助教激励学习、客服在线随时答疑，认真聆听用户声音；</p>
+                    <p class="text-666 text-indent line-30 fs16 mb10">高端设计平民化：所有用户都有每天免费学习一个教程的机会，真正的做到让更多人学得起，学得好，致力于从根源上实现教育的公平性，让高端设计平民化。</p>
+                </figcaption>
+            </figure>
+            <div class="contact">
+                <h3 class="text-indent line-30 fs16 mb10 bolder">联系方式：</h3>
+                <p class="text-indent line-30 fs16 mb10">客服QQ：584223406</p>
+                <p class="text-indent line-30 fs16 mb10">内容合作：42445466@qq.com</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="map center margin-auto clearFix">
+            <h3>我们的地址，欢迎您前来咨询</h3>
+            <div id="allmap" class="pull-left"></div>
+            <div id="r-result" class="pull-left">
+                <input type="button" onclick="add_control();" value="展示控件" /> <br>
+                <input type="button" onclick="delete_control();" value="移除控件" /> <br>
+            </div>
+            <script type="text/javascript">
+            // 百度地图API功能
+            var map = new BMap.Map("allmap");
+            map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);
+
+            var top_left_control = new BMap.ScaleControl({anchor: BMAP_ANCHOR_TOP_LEFT});// 左上角，添加比例尺
+            var top_left_navigation = new BMap.NavigationControl();  //左上角，添加默认缩放平移控件
+            var top_right_navigation = new BMap.NavigationControl({anchor: BMAP_ANCHOR_TOP_RIGHT, type: BMAP_NAVIGATION_CONTROL_SMALL}); //右上角，仅包含平移和缩放按钮
+            /*缩放控件type有四种类型:
+            BMAP_NAVIGATION_CONTROL_SMALL：仅包含平移和缩放按钮；BMAP_NAVIGATION_CONTROL_PAN:仅包含平移按钮；BMAP_NAVIGATION_CONTROL_ZOOM：仅包含缩放按钮*/
+
+            //添加控件和比例尺
+            function add_control(){
+                map.addControl(top_left_control);
+                map.addControl(top_left_navigation);
+                map.addControl(top_right_navigation);
+            }
+            add_control();
+            //移除控件和比例尺
+            function delete_control(){
+                map.removeControl(top_left_control);
+                map.removeControl(top_left_navigation);
+                map.removeControl(top_right_navigation);
+            }
+        </script>
+        </div>
+    </section>
+</main>
+<!--主体部分-->
+
+<!--尾部开始-->
+<footer id="footer"></footer>
+<!--尾部结束-->
+
+<script src="../js/reducedUnit.js"></script>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<script src="../js/jquery.nicescroll.js"></script>
+<script>
+    $(function () {
+        $("#header").load("../common/header.html");
+        $("#footer").load("../common/footer.html");
+    });
+    $(document).ready(function () {
+        $("html").niceScroll({
+            cursorwidth: 7,
+            cursoropacitymin: 0.4,
+            cursorcolor: '#6e8cb6',
+            cursorborder: 'none',
+            cursorborderradius: 10,
+            autohidemode: 'leave',
+        });  // free your immagination
+    });
+</script>
+</body>
+</html>

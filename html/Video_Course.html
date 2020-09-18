@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--视窗   宽度 = 屏幕可见宽度     缩放倍数=1（不缩放） 允许最大倍数      禁止用户缩放-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <!--让IE用最新版本渲染-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script rel="stylesheet" href="../common/js/html5.js"></script>
+    <script rel="stylesheet" href="../common/js/respond.js"></script>
+    <link rel="stylesheet" href="../common/reset.css">
+    <link rel="stylesheet" href="../common/public.css">
+    <link rel="stylesheet" href="../common/header.css">
+    <link rel="stylesheet" href="../common/footer.css">
+    <link rel="stylesheet" href="../css/Video_Course.css">
+
+    <link rel="stylesheet" href="../common/bootstrap.css">
+</head>
+<style>
+    .paging a.active {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+</style>
+<body class="bg-f5f5f5">
+<!--头部开始-->
+<header id="header"></header>
+<!--头部结束-->
+
+<main class="content">
+    <div class="center">
+        <!--导航-->
+        <ol class="flex list-ol">
+            <li><a href="../index.html" class="text-666">首页</a></li>
+            <li class="p-relative"><a href="##" class="inline-block text-333">课程列表</a></li>
+        </ol>
+        <!--选项卡-->
+        <div class="tab">
+            <div class="tab-choose">
+                <div class="choose choose-one flex">
+                    <span class="inline-block text-666">按班分:</span>
+                    <div>
+                        <ul class="flex">
+                            <li class="text-center"><a href="##" class="text-center inline-block text-999 active">全部</a></li>
+                            <li class="text-center"><a href="##" class="text-center inline-block text-999">大数据</a></li>
+                            <li class="text-center"><a href="##" class="text-center inline-block text-999">UI大数据</a></li>
+                            <li class="text-center"><a href="##" class="text-center inline-block text-999">WEB前端</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="choose choose-two flex">
+                    <span class="text-666 inline-block">按讲师:</span>
+                    <div>
+                        <ul class="flex">
+                            <li><a href="##" class="text-center inline-block text-999 active">全部</a></li>
+                            <li><a href="##" class="text-center inline-block text-999">刘老师</a></li>
+                            <li><a href="##" class="text-center inline-block text-999">腊梅老师</a></li>
+                            <li><a href="##" class="text-center inline-block text-999">施老师</a></li>
+                            <li><a href="##" class="text-center inline-block text-999">何老师</a></li>
+                            <li><a href="##" class="text-center inline-block text-999">翟老师</a></li>
+                            <li><a href="##" class="text-center inline-block text-999">侯老师</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="choose choose-three flex">
+                    <span class="text-666">排序方式:</span>
+                    <div>
+                        <ul class="flex">
+                            <li><a href="##" class="inline-block text-center text-999">最新</a></li>
+                            <li><a href="##" class="inline-block text-center text-999">热度</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content">
+                <ul class="flex flex-wrap over-hidden">
+                    <li class="">
+                        <a href="video.html" class="block">
+                            <img src="../images/video_course1.jpg" alt="">
+                        </a>
+                        <div class="text bg-fff box-border-box">
+                            <a class="text-ellipsis">大数据爬虫</a>
+                            <div class="flex flex-between">
+                                <span class="text-999 inline-block">9306人学习</span>
+                                <a class="inline-block">免费</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="">
+                        <a href="video.html" class="block">
+                            <img src="../images/video_course2.jpg" alt="">
+                            <div class="text bg-fff ">
+                                <a class="text-ellipsis">hive离线数据库</a>
+                                <div class="flex flex-between">
+                                    <span class="text-999 inline-block">9484人学习</span>
+                                    <a class="inline-block">免费</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="video.html" class="block">
+                            <img src="../images/video_course3.png" alt="">
+                        </a>
+                            <div class="text bg-fff ">
+                                <a href="">
+                                    <a class="text-ellipsis">画图讲解hadoop视频</a>
+                                    <div class="flex flex-between">
+                                        <span class="text-999 inline-block">8311人学习</span>
+                                        <a class="inline-block">会员</a>
+                                    </div>
+                                </a>
+                            </div>
+                    </li>
+                    <li class="">
+                        <a href="video.html">
+                            <img src="../images/video_course4.png" alt="">
+                            <div class="text bg-fff ">
+                                <a class="text-ellipsis">大数据专业及应用场景讲解</a>
+                                <div class="flex flex-between">
+                                    <span class="text-999 inline-block">7742人学习</span>
+                                    <a class="inline-block">免费</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="video.html">
+                            <img src="../images/video_course5.jpg" alt="">
+                            <div class="text bg-fff ">
+                                <a class="text-ellipsis">Kafaka课程</a>
+                                <div class="flex flex-between">
+                                    <span class="text-999 inline-block">9377人学习</span>
+                                    <a class="inline-block">会员</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="video.html">
+                            <img src="../images/video_course6.jpg" alt="">
+                            <div class="text bg-fff ">
+                                <a class="text-ellipsis">Redis讲解</a>
+                                <div class="flex flex-between">
+                                    <span class="text-999 inline-block">1364人学习</span>
+                                    <a class="inline-block">会员</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="video.html">
+                            <img src="../images/video_course7.jpg" alt="">
+                            <div class="text bg-fff">
+                                <a class="text-ellipsis">hbase</a>
+                                <div class="flex flex-between">
+                                    <span class="text-999 inline-block">2097人学习</span>
+                                    <a class="inline-block">会员</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="video.html">
+                            <img src="../images/video_course8.jpg" alt="">
+                            <div class="text bg-fff">
+                                <a class="text-ellipsis">sqoop课程</a>
+                                <div class="flex flex-between">
+                                    <span class="text-999 inline-block">1487人学习</span>
+                                    <a class="inline-block">会员</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="video.html">
+                            <img src="../images/video_course9.png" alt="">
+                            <div class="text bg-fff">
+                                <a class="text-ellipsis">hadoop优化课程</a>
+                                <div class="flex flex-between">
+                                    <span class="text-999 inline-block">3423人学习</span>
+                                    <a class="inline-block">会员</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="video.html">
+                            <img src="../images/video_course10.jpg" alt="">
+                            <div class="text bg-fff">
+                                <a class="text-ellipsis">SPARK课程讲解</a>
+                                <div class="flex flex-between">
+                                    <span class="text-999 inline-block">3678人学习</span>
+                                    <a class="inline-block">会员</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="video.html">
+                            <img src="../images/video_course11.png" alt="">
+                            <div class="text bg-fff">
+                                <a class="text-ellipsis">storm实时分析</a>
+                                <div class="flex flex-between">
+                                    <span class="text-999 inline-block">2571人学习</span>
+                                    <a class="inline-block">会员</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="video.html">
+                            <img src="../images/video_course12.png" alt="">
+                            <div class="text bg-fff">
+                                <a class="text-ellipsis">舆情大数据平台分析</a>
+                                <div class="flex flex-between">
+                                    <span class="text-999 inline-block">1.0万人学习</span>
+                                    <a class="inline-block">免费</a>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--分页-->
+        <div class="paging text-center" id="pages">
+            <a class="inline-block text-center text-666">首</a>
+            <a class="inline-block text-center text-666"><</a>
+            <a class="inline-block text-center text-666 active">1</a>
+            <a class="inline-block text-center text-666">2</a>
+            <a class="inline-block text-center text-666">3</a>
+            <a class="inline-block text-center text-666">4</a>
+            <a class="inline-block text-center text-666">5</a>
+            <a class="inline-block text-center text-666">6</a>
+            <a class="inline-block text-center text-666">></a>
+            <a class="inline-block text-center text-666">末</a>
+        </div>
+    </div>
+
+    <!--script-->
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <script src="../js/reducedUnit.js"></script>
+    <script>
+        $(function () {
+            function myClick(ele) {
+                $(ele).on('click','li',function () {
+                    $(this).find('a').addClass('active').parent().siblings().find('a').removeClass('active');
+                    return false;
+                });
+            }
+            myClick('.choose-one');
+            myClick('.choose-two');
+            myClick('.choose-three');
+        });
+        $(function () {
+            $("#header").load("../common/header.html");
+            $("#footer").load("../common/footer.html")
+        });
+        $(function () {
+            $('#pages').on('click', 'a', function () {
+                var _index = $(this).index();
+                var _oAsIndex = $('#pages>a.active').index();
+                var pageAs = $('#pages>a');
+                switch (_index) {
+                    case 0:
+                        pageAs.eq(2).addClass('active').siblings().removeClass('active');
+                        break;
+                    case 1:
+                        pageAs.eq(_oAsIndex - 1 <= 1 ? alert('已经是首页') : _oAsIndex - 1).addClass('active').siblings().removeClass('active');
+                        break;
+                    case pageAs.length - 2:
+                        pageAs.eq(_oAsIndex + 1 >= pageAs.length - 2 ? alert('已经是最后一页') : _oAsIndex + 1).addClass('active').siblings().removeClass('active');
+                        break;
+                    case pageAs.length - 1:
+                        pageAs.eq(pageAs.length - 3).addClass('active').siblings().removeClass('active');
+                        break;
+                    default :
+                        $(this).addClass('active').siblings().removeClass('active');
+                }
+                return false;
+            });
+            $(function(){
+                var num = 257;
+                $(".Fabulous").click(function(){
+                    var oHtml = '<i class="glyphicon glyphicon-heart"></i>' + (num++);
+                    $(this).html(oHtml);
+                    return false;
+                });
+            })
+        });
+    </script>
+</main>
+
+<!--尾部开始-->
+<footer id="footer"></footer>
+<script src="../js/public.js"></script>
+<!--尾部结束-->
+<script>
+    $(function () {
+        $("#header").load("../common/header.html");
+        $("#footer").load("../common/footer.html")
+    });
+</script>
+</body>
+</html>

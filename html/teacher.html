@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--视窗   宽度 = 屏幕可见宽度     缩放倍数=1（不缩放） 允许最大倍数      禁止用户缩放-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+    <!--让IE用最新版本渲染-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="../js/reducedUnit.js"></script>
+    <link rel="stylesheet" href="../common/reset.css">
+    <link rel="stylesheet" href="../common/public.css">
+    <link rel="stylesheet" href="../common/header.css">
+    <link rel="stylesheet" href="../common/footer.css">
+    <link rel="stylesheet" href="../css/teacher.css">
+    <link rel="stylesheet" href="../common/bootstrap.css">
+</head>
+<body>
+<!--头部开始-->
+<header id="header"></header>
+<!--头部结束-->
+
+<!--名师专区开始-->
+<section class="teacher">
+    <div class="tea-con center margin-auto">
+        <ul class="clearFix">
+            <li class="cursor pull-left p-relative over-hidden" title="刘老师" >
+                <a href="teaInt.html" class="inline-block">
+                    <div class="tea-txt box-border-box">
+                        <h4>刘老师</h4>
+                        <span>毕业于西北工业大学硕士，主攻大数据研发、大数据架构设计</span>
+                        <div class="con ">
+                            <p>致力于大数据爬虫、分布式架构的研究;针对于大数据研发离线和实时分析10年以上的工作经验</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="cursor pull-left p-relative over-hidden" title="腊梅老师" >
+                <a href="teaInt.html" class="inline-block">
+                    <div class="tea-txt box-border-box">
+                        <h4>腊梅老师</h4>
+                        <span>独立设计并研发爬虫调度框架及千万级Web应用并发框架</span>
+                        <div class="con ">
+                            <p>15年ui设计师经验，擅长ui设计、图标设计、LOGO设计。多年从事软件、网站、印刷等方面的设计。曾经就职公司：搜狐、亚信集团、千方集团等。秉持着快乐教学,快乐生活的教学理念。</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="cursor pull-left p-relative over-hidden" title="施老师">
+                <a href="teaInt.html" class="inline-block">
+                    <div class="tea-txt box-border-box">
+                        <h4>施老师</h4>
+                        <span class="block">北京师范大学</span>
+                        <div class="con ">
+                            <p>擅长java框架研发，在大数据、金融等领域工作近10年，曾工作于凤凰金融、巴士在线等大型上市公司,对产品架构设计、大数据并发等有比较深的造诣</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="cursor pull-left p-relative over-hidden" title="何老师">
+                <a href="teaInt.html" class="inline-block">
+                    <div class="tea-txt box-border-box">
+                        <h4>何老师</h4>
+                        <span>北京工业大学毕业，实际大数据行业8年工作经验以上</span>
+                        <div class="con ">
+                            <p>大数据爬虫工作近10年，曾在京东、凤凰网专门负责爬虫组的研发及架构设计</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="cursor pull-left p-relative over-hidden" title="翟老师">
+                <a href="teaInt.html" class="inline-block">
+                    <div class="tea-txt box-border-box">
+                        <h4>翟老师</h4>
+                        <span class="block">任职于百度，主攻无人驾驶</span>
+                        <div class="con">
+                            <p>熟知Kmeans、SVM、EM等机器学习算法与原理，熟悉深度学习原理与CNN、RNN、GAN等网络架构，了解主流物体识别与人脸检测算法。</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li class="cursor pull-left p-relative over-hidden" title="侯老师" >
+                <a href="teaInt.html" class="inline-block">
+                    <div class="tea-txt box-border-box">
+                        <h4>侯老师</h4>
+                        <span class="block">资深WEB前端讲师</span>
+                        <div class="con">
+                            <p>十年大厂实际开发经验，三年培训机构实际讲师经验。</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+<!--名师专区开始-->
+
+<!-- 公共分页 开始 -->
+<section>
+    <div class="margin-auto center">
+        <div class="paging text-center" id="pages">
+            <a class="inline-block text-center text-666">首</a>
+            <a class="inline-block text-center text-666"><</a>
+            <a class="inline-block text-center text-666 active">1</a>
+            <a class="inline-block text-center text-666">></a>
+            <a class="inline-block text-center text-666">末</a>
+        </div>
+        <script src="../js/jquery-1.11.0.min.js"></script>
+
+        <script>
+                $('#pages').on('click', 'a', function () {
+                    var _index = $(this).index();
+                    var _oAsIndex = $('#pages>a.active').index();
+                    var pageAs = $('#pages>a');
+                    switch (_index) {
+                        case 0:
+                            pageAs.eq(2).addClass('active').siblings().removeClass('active');
+                            break;
+                        case 1:
+                            pageAs.eq(_oAsIndex - 1 <= 1 ? alert('已经是首页') : _oAsIndex - 1).addClass('active').siblings().removeClass('active');
+                            break;
+                        case pageAs.length - 2:
+                            pageAs.eq(_oAsIndex + 1 >= pageAs.length - 2 ? alert('已经是最后一页') : _oAsIndex + 1).addClass('active').siblings().removeClass('active');
+                            break;
+                        case pageAs.length - 1:
+                            pageAs.eq(pageAs.length - 3).addClass('active').siblings().removeClass('active');
+                            break;
+                        default :
+                            $(this).addClass('active').siblings().removeClass('active');
+                    }
+                    return false;
+                });
+        </script>
+    </div>
+</section>
+<!-- 公共分页 结束 -->
+
+<!--尾部开始-->
+<footer id="footer"></footer>
+<!--尾部结束-->
+
+<script src="../js/jquery.nicescroll.js"></script>
+<script>
+    $(function () {
+        $("#header").load("../common/header.html");
+        $("#footer").load("../common/footer.html")
+    });
+    $(document).ready(function () {
+        $("html").niceScroll({
+            cursorwidth: 7,
+            cursoropacitymin: 0.4,
+            cursorcolor: '#6e8cb6',
+            cursorborder: 'none',
+            cursorborderradius: 10,
+            autohidemode: 'leave',
+        });  // free your immagination
+    });
+</script>
+</body>
+</html>
